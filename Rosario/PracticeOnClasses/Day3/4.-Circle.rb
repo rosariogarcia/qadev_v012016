@@ -1,26 +1,26 @@
 =begin
+This class is for calculate the area and perimeter of Circle
+using Classes on Ruby
 =end
 class Circle
 
-	@pi = Math::PI
-	@radius
-
-	def initialize 
-		puts "Give me the radius of Circle"
-		@radius = gets
+	def initialize radius
+		@radius = radius
+		puts "The circle has radius equals to #{@radius}"
 	end 
 
 	def areaCircle
-		area = @radius*2*@pi
-		puts "Area: #{area}"
+		puts "The area of circle is: #{ @radius * 2 * Math::PI }" 
 	end
+
 	def perimeterCircle
-		perimeter = @radius*@radius*@pi
-		puts "Perimeter: #{perimeter}"
+		puts "The perimeter of circle #{ @radius * @radius * Math::PI }" 
 	end
 end
 
-Circle.new.areaCircle
-Circle.new.perimeterCircle
-
+puts "Give me the radius of Circle"
+radius = gets.chomp.to_i
+circle = Circle.new(radius)
+circle.areaCircle
+circle.perimeterCircle
 
