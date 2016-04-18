@@ -1,0 +1,20 @@
+GUIDELINES SUGESTIONS
+1.- Format (int, float, string)
+	- Prefer string interpolation instead of string concatenation.
+2.- Classes:
+	- Avoid the usage of class (@@) variables due to their "nasty" behavior in inheritance.
+	- Use def self.method to define singleton methods.
+3.- Methods:
+	- Use def with parentheses only when there 	are parameters.
+	- Avoid methods with a single-line.
+	- Never put a space between a method name and the opening parenthesis
+	- Avoid return where not required.
+4.- Variables, Getter/Setter
+	- Use the Getter method to access to any variable.
+	- Use the Setter method to access to any variable.
+	- Use the methods defined by Ruby to access to any variable
+5.- If condition:
+	- Never use then for multi-line if/unless
+	- Never use unless with else. Rewrite these with the positive case first
+	- Avoid unless with multiple conditions
+	- Don't use parentheses around the condition of an 	if/unless/while
