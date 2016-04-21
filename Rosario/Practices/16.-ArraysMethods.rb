@@ -1,4 +1,3 @@
-puts"hola"
 class ArraysWithMethods
 	def mixed_arrays
 		numeric = []
@@ -48,3 +47,32 @@ join = my_arrays.join_arrays(array1,array2)
 puts "Join arrays: " + join
 
 my_arrays.print_array(join)
+
+=begin
+Results:
+
+Give me the length of array:
+5
+Give me the item 0
+1
+Give me the item 1
+a
+Give me the item 2
+2
+Give me the item 3
+b
+Give me the item 4
+3
+["1", "2", "3"]
+["a", "b"]
+["1", "2", "3", "a", "b"]
+Have this arrays: ["2", "4", "6", "8", "10", "12"]and["3", "6", "9", "12", "15", "18"]
+Items in common: ["6", "12"]
+first element array1: 2
+first element array2: 3
+first element array1: 12
+first element array2: 18
+Join arrays: ["4", "6", "8", "10", "12", "3", "6", "9", "12", "15"]
+["4", "6", "8", "10", "12", "3", "6", "9", "12", "15"]
+
+=end
