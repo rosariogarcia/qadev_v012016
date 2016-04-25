@@ -1,9 +1,8 @@
-def traveler(name = "#{namet}",
-			destination = "#{destt}", 
-			price = "#{pricet}")
-	destination == "" ? 
-	(puts "#{name}, CBBA, #{priceToDollars(price)}") :
-	(puts "#{name}, #{destination}, #{priceToDollars(price)}")
+def traveler(name, 
+			price,
+			destination = "CBBA")
+	puts #{name}, CBBA, #{priceToDollars(price)}") :
+	(puts "#{name}, #{priceToDollars(price)}, #{destination}")
 end
 def priceToDollars(price)
 	price.to_f * 6.96
@@ -16,18 +15,20 @@ destt = gets.chomp
 puts "Give me the price"
 pricet = gets.chomp
 
-puts traveler namet, destt,pricet
+destt !=""?
+(puts traveler namet, pricet, destt) :
+(puts traveler namet, pricet)
 
 =begin
 Results:
 
 C:\Users\RosarioGarcia\Ruby Repository\qadev_v012016\Rosario\Practices>ruby 10.-Travel.rb
 Give me the name
-ro
+rosario
 Give me the destination, you can omit this parameter
 
 Give me the price
-34
-ro, CBBA, 236.64
+234
 
+rosario, 1628.64, CBBA
 =end
