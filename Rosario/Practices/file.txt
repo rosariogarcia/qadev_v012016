@@ -1,0 +1,3 @@
+This File is a result of practice of Files
+The method to create this file is on 21.-File.rb file
+The script is writing under the programming language Ruby
