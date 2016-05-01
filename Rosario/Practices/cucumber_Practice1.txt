@@ -1,0 +1,60 @@
+1. Research :
+- When and why BDD was defined
+
+BDD is a process designed to aid the management and the delivery of software development projects by improving communication between engineers and business professionals. By aiding communication between these two teams, BDD ensures all development projects remain focused on delivering what the business actually needs while meeting all requirements of the user.
+
+- The most important aspects of BDD
+* All development work can be traced back directly to business objectives.
+* Software development meets user need. Satisfied users = good business.
+* Efficient prioritisation - business-critical features are delivered first.
+* All parties have a shared understanding of the project and can be involved in the communication.
+* A shared language ensures everyone (technical or not) has thorough visibility into the project’s progression.
+* Resulting software design that matches existing and supports upcoming business needs.
+* Improved quality code reducing costs of maintenance and minimising project risk.
+
+- Why is useful and when could be applied.
+Is useful because encourages collaboration between developers, QA and non-technical or business participants in a software project.
+
+- Which type of teams could implement BDD
+BDD has evolved out of established agile practices and is designed to make them more accessible and effective for teams new to agile software delivery. Over time, BDD has grown to encompass the wider picture of agile analysis and automated acceptance testing.
+
+2. Structure of a feature – Give an example
+A feature in the BDD context describe an functional area of your product. A feature usually contains a list of scenarios. You can write whatever you want up until the first scenario, which starts with Scenario. You can use tags to group features and scenarios together, independent of your file and directory structure.
+
+Feature: Serve coffee
+  In order to earn money
+  Customers should be able to
+  buy coffee at all times
+
+
+3. Structure of a user story – Give an example
+One definition of a story in a product development context is “a narrative describing the smallest possible unit of work that can deliver value to someone.”
+
+Often stories are written in this form:
+
+"As a <role> I want <feature> so that <benefit>"
+
+As a well-wrtten application module, I want to ensure that all my inputs are checked for string validity, So that I won’t crash when given bad input”.
+
+
+4. Structure of a scenario – Give an example
+
+Every scenario consists of a list of steps, which must start with one of the keywords Given, When, Then, But or And (or localized one). Behat treats them all the same, but you shouldn’t. Here is an example:
+
+ Scenario: Buy last coffee
+    Given there are 1 coffees left in the machine
+    And I have deposited 1 dollar
+    When I press the coffee button
+    Then I should be served a coffee
+
+5. Differences between BDD and BDT
+
+BDT - Behavior driven testing, usually come after /during BDD (Behavior Driven development) but is not a must, it can be organized with traditional testing as well.
+
+It engages shareholders and the delivery team with different views on the same page and makes sure that all have the same expectations.
+
+BDD begins with the business goal. The goal of BDT is a business readable and domain specific language that allows you to describe a behavior of a system without putting details on how that behavior is developed.
+
+In BDT, Tests in the form of simple text features/descriptions with scenarios are typically written before anything else and checked by the non-technical shareholders.
+
+Cucumber is an optimized tool for BDD, which can execute simple-text functional specifications as automated tests. Cucumber supports writing specifications in around 30 spoken languages. Cucumber works with Ruby, Java, .NET, Flex or web applications written in any language. It is both BDD and TDD. Cucumber establishes specifications in different ways like lists, prose and data in tables.
