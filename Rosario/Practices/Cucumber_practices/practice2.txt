@@ -1,0 +1,23 @@
+Diferences using --Dry -Run and Without it:
+
+- The results of execute the search_customer.feature was using --dry -run was:
+
+C:\Users\RosarioGarcia\Ruby Repository\qadev_v012016\Rosario\cucumber\features>c
+ucumber search_customer.feature --dry -run
+*** WARNING: You must use ANSICON 1.31 or higher (https://github.com/adoxa/ansic
+on/) to get coloured output on Windows
+0 scenarios
+0 steps
+
+
+- The results of execute the search_customer.feature was without --dry -run was:
+
+C:\Users\RosarioGarcia\Ruby Repository\qadev_v012016\Rosario\cucumber\features>c
+ucumber search_customer.feature
+*** WARNING: You must use ANSICON 1.31 or higher (https://github.com/adoxa/ansic
+on/) to get coloured output on Windows
+0 scenarios
+0 steps
+0m0.000s
+
+- When use --dry -run the sintaxis is analized and without it all file is executed
