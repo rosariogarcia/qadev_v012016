@@ -1,12 +1,11 @@
-Given(/^I click on (Sign Up|Create an account)$/) do |arg1,
-arg2|
+Given(/^the flight ([A-Z0-9]+) is leaving today$/) do |code|
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-When(/^I want to manage my email$/) do
+When(/^the flight go out from Sucre$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-Then (/^I see (Insert credentials|Data new user)$/) do
+Then(/^we should be prepare the platform$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
